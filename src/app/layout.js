@@ -3,6 +3,7 @@ import { Header } from "./Components/Header/Header";
 import { Footer } from "./Components/Footer/Footer";
 import {layout, main } from '@/app/layout.module.scss';
 import Head from "next/head";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
