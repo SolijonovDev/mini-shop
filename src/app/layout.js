@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
    const GA_MEASUREMENT_ID = 'G-MBNNDBYR0H';
   return (
     <html lang="en">
-     // --------- analitika start
       <Head>
           <link
             rel="stylesheet"
@@ -77,7 +76,6 @@ accurateTrackBounce:true
             </div>
           </noscript>
         </Head>
-     //---------- analitika end
       <body className={layout}>
         {/* <Header/> */}
           <div className={main}>
