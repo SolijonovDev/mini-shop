@@ -1,17 +1,22 @@
 import { Container } from '@/app/Components/Container/Container';
 import { Header } from '@/app/Components/Header/Header';
 import {home} from '@/app/Views/HomeView/HomeView.module.scss';
-import {data} from '@/app/Views/HomeView/data';
+import { Shops } from './Shops/Shops';
+import { Filtr } from './Filtr/Filtr';
+import { Banner } from './Banner/Banner';
+import { Info } from './Info/Info';
+import { ProductItems } from './ProductItems/ProductItems';
 
 export const HomeView=()=>{
     return (
         <div className={home}>
             <Container>
                 <div>
-                    <h2>Shop time</h2> 
-                         {/* {data.map(d=>{
-                          return <p key={d.id}>{d.name}</p>
-                 })} */}
+                  <Banner/>
+                  <Shops/>
+                  <Filtr/>
+                  <ProductItems/>
+                  <Info/>
                 </div>
             </Container>
         </div>

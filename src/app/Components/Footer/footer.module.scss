@@ -1,5 +1,12 @@
 .footer{
-    border: 1px solid red;
-    height: 150px;
-    background-color: aqua;
+    border-top: 1px solid red;
+    height: 75px;
+    .footer_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+  
 }
+
