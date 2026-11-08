@@ -1,9 +1,14 @@
-import { shops,item, logo,item_left,item_info, go_icon } from '@/app/Views/HomeView/Shops/shops.module.scss';
+import { SeparateNumberFormat } from '@/app/helpers/separate-number';
+import { shops,item, logo,item_left,item_info, rating,go_icon,shops_block } from '@/app/Views/HomeView/Shops/shops.module.scss';
+import { FaStar } from "react-icons/fa";
+import { MdNavigateNext } from "react-icons/md";
 
 export const Shops=()=>{
     return (
         <div className={shops}>
-           <div className={item}>
+            <h2>Bizning do'konlar</h2>
+          <div className={shops_block}>
+             <div className={item}>
            <div className={item_left}>
              <div className={logo}>
                 <span>F</span>
@@ -11,11 +16,11 @@ export const Shops=()=>{
             <div className={item_info}>
                 <h4>Family-shop</h4>
                 <div>
-                    <span>rating: 4.8</span> <span>43000+ zakaz</span>
+                    <span className={rating}><FaStar color='orange' size={14}/> 4.8</span> <span>{SeparateNumberFormat(43000)}+ zakaz</span>
                 </div>
             </div>
            </div>
-            <p className={go_icon}>{">"}</p>
+              <a className={go_icon} href='https://uzum.uz/uz/shop/fyshop' target='_blank'><MdNavigateNext size={22}/></a>
            </div>
               <div className={item}>
            <div className={item_left}>
@@ -25,12 +30,13 @@ export const Shops=()=>{
             <div className={item_info}>
                 <h4>Shop time</h4>
                 <div>
-                    <span>rating: 4.9</span> <span>19500+ zakaz</span>
+                    <span><FaStar color='orange' size={14}/> 4.9</span> <span>{SeparateNumberFormat(20000)}+ zakaz</span>
                 </div>
             </div>
            </div>
-             <p className={go_icon}>{">"}</p>
+            <a href='https://uzum.uz/uz/shop/shop-time' target='_blank' className={go_icon}><MdNavigateNext size={22}/></a>
            </div>
+          </div>
         </div>
     )
 }

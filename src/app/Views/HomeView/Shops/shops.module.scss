@@ -1,9 +1,16 @@
 .shops{
+    margin-top: 25px;
+    h2{
+        text-align: left;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    .shops_block{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 40px;
-    margin-top: 40px;
     .item{
         display: flex;
         align-items: center;
@@ -12,6 +19,10 @@
         border-radius: 10px;
         padding: 20px 12px;
         width: 48%;
+        max-width: 400px;
+        &:first-child{
+            margin-right: 20px;
+        }
     }
     .item_left{
         display: flex;
@@ -33,9 +44,12 @@
     }
     .item_info{
         margin-left: 25px;
+        div{
+            margin-top: 10px;
+        }
     }
-    .go_icon{
-        font-size: 20px;
-        font-weight: 700;
+    .rating{
+        margin-right: 12px;
     }
+}
 }

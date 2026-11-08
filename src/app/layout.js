@@ -82,7 +82,7 @@ accurateTrackBounce:true
             <main className={main}>
               {children}
             </main>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       </body>
     </html>

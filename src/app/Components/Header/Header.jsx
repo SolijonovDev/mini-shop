@@ -1,5 +1,7 @@
-import { header, header_block, left } from '@/app/Components/Header/header.module.scss';
+import { header, header_block, left, right } from '@/app/Components/Header/header.module.scss';
 import { Container } from '../Container/Container';
+import { CgProfile } from "react-icons/cg";
+import { MdFavoriteBorder } from "react-icons/md";
 
 export const Header=()=>{
     return (
@@ -8,11 +10,16 @@ export const Header=()=>{
                <div className={header_block}>
                 <div className={left}>
                   <h2>Shop time</h2>
-                  <h3>Bosh sahifa</h3>
-                  <h4>Chexollar</h4>
-                  <h5>Qidiruv</h5>
+                  {/* <input className={search}/> */}
                 </div>
-                <div>Profile</div>
+                <div className={right}>
+                    <button>
+                        <MdFavoriteBorder size={22}/>
+                    </button>
+                    <button>
+                        <CgProfile size={22}/>
+                    </button>
+                </div>
                </div>
             </Container>
         </header>

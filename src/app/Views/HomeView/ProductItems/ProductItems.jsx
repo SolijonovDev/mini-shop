@@ -9,22 +9,7 @@ export const ProductItems=()=>{
             <h2>Top chexollar</h2>
 
            <div className={items}>
-             {data.map((d,index)=>{
-                return <Card key={index} data={d}/>
-            })}
-            {data.map((d,index)=>{
-                return <Card key={index} data={d}/>
-            })}
-            {data.map((d,index)=>{
-                return <Card key={index} data={d}/>
-            })}
-            {data.map((d,index)=>{
-                return <Card key={index} data={d}/>
-            })}
-            {data.map((d,index)=>{
-                return <Card key={index} data={d}/>
-            })}
-            {data.map((d,index)=>{
+             {data.sort((a,b)=>b.prioritet-a.prioritet).map((d,index)=>{
                 return <Card key={index} data={d}/>
             })}
            </div>

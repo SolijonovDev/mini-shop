@@ -1,15 +1,30 @@
 .header{
-    border:1px solid red;
+    background-color:#fff;
+    border-bottom: 1px solid #f1f1f1;
     .header_block{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px;
+        padding: 10px 0;
     }
       .left{
         width: 60%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .right{
+        button{
+            padding: 6px;
+            border-radius: 17px;
+            width: 34px;
+            height: 34px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 12px;
+            }
+        }
     }
 }
