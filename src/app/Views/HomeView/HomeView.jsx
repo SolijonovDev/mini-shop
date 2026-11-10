@@ -16,7 +16,7 @@ export const HomeView=()=>{
                   {/* <Filtr/> */}
                   <ProductItems/>
                   {/* <RatingsInUzum/> */}
-                  {/* <Info/> */}
+                  <Info/>
             </Container>
         </div>
     )
