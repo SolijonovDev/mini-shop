@@ -11,14 +11,12 @@ export const HomeView=()=>{
     return (
         <div className={home}>
             <Container>
-                <div>
                   <Banner/>
                   <Shops/>
                   {/* <Filtr/> */}
                   <ProductItems/>
                   {/* <RatingsInUzum/> */}
-                  <Info/>
-                </div>
+                  {/* <Info/> */}
             </Container>
         </div>
     )

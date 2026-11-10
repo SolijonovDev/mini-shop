@@ -14,10 +14,10 @@ export const Header=()=>{
                 </div>
                 <div className={right}>
                     <button>
-                        <MdFavoriteBorder size={22}/>
+                        <MdFavoriteBorder size={18}/>
                     </button>
                     <button>
-                        <CgProfile size={22}/>
+                        <CgProfile size={18}/>
                     </button>
                 </div>
                </div>
