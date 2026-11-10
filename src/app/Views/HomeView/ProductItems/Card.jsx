@@ -10,9 +10,18 @@ export const Card=({data})=>{
             <img src={data.imgSrc} alt={data.title} />
             <div className={card_info}>
                 <h5>{data.title}</h5>
-                <p className={sold}><span><span className={star}><FaStar color='orange' size={14}/></span>{data.rating}  
-                (<span className={comment}><FaComment size={12} color='#666'/></span> {data.ratingQuantity})</span> 
-                <span>{data.orderQuantity} + sotuv</span> </p>
+                <p className={sold}>
+                    <span>
+                        <span className={star}>
+                            <FaStar color='orange' size={14}/>
+                        </span>
+                            {data.rating}  
+                    (<span className={comment}>
+                        <FaComment size={12} color='#666'/>
+                    </span> {data.ratingQuantity})
+                    </span> 
+                    <span>{data.orderQuantity} + sotuv</span> 
+                </p>
                 <p className={price}>{SeparateNumberFormat(data.price)} so'm</p>
                 <a href={data.link} target='_blank'>
                    <span> Uzum'da xarid</span>
