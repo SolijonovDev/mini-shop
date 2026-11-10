@@ -1,19 +1,17 @@
 .card{
-    background-color: beige;
-
     img{
         width: 100%;
     }
     .card_info{
-        padding: 10px;
+        padding: 10px 3px;
         @media (max-width: 900px) {
-            padding: 7px;
+            padding: 7px 3px;
         }
         @media (max-width: 750px) {
-            padding: 5px;
+            padding: 5px 2px;
         }
         @media (max-width: 500px) {
-            padding: 3px;
+            padding: 3px 2px;
         }  
         h5{
             font-size: 18px;
