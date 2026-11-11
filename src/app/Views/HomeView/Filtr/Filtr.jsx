@@ -7,7 +7,6 @@ export const Filtr=()=>{
 
     const handleClick=(b)=>{
         setActive(b);
-        console.log('active',active)
     }
 
     return (

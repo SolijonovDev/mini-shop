@@ -2,8 +2,7 @@ import "./globals.css";
 import { Header } from "./Components/Header/Header";
 import { Footer } from "./Components/Footer/Footer";
 import {layout, main } from '@/app/layout.module.scss';
-import Head from "next/head";
-import Script from "next/script";
+import { YandexMetrica } from "./Components/YandexMetrica.jsx/YandexMetrica";
 
 export const metadata = {
   title: "Shop time",
@@ -11,72 +10,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-   const GA_MEASUREMENT_ID = 'G-MBNNDBYR0H';
   return (
     <html lang="en">
-      <Head>
+      <head>
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <meta name="yandex-verification" content="0218c1bdc844b5e4" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-          {process.env.NODE_ENV !== 'development' && (
-            <Script
-              strategy="afterInteractive"
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            />
-          )}
-          {process.env.NODE_ENV !== 'development' && (
-            <Script
-              id="google-analytics"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-             window.dataLayer = window.dataLayer || [];
-             function gtag(){dataLayer.push(arguments);}
-             gtag('js', new Date());
-             gtag('config', '${GA_MEASUREMENT_ID}', {
-                 page_path: window.location.pathname,
-             });
-             `,
-              }}
-            />
-          )}
-
-          {/* Google analytics end */}
-
-          {/* Yandex analytics start */}
-          {process.env.NODE_ENV !== 'development' && (
-            <script
-              type="text/javascript"
-              dangerouslySetInnerHTML={{
-                __html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-m[i].l=1*new Date();
-for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-ym(95927444, "init", {
-clickmap:true,
-trackLinks:true,
-accurateTrackBounce:true
-});`,
-              }}
-            ></script>
-          )}
-
-          <noscript>
-            <div>
-              <img
-                src="https://mc.yandex.ru/watch/95927444"
-                style={{ position: 'absolute', left: '-9999px' }}
-                alt=""
-              />
-            </div>
-          </noscript>
-        </Head>
+        </head>
       <body >
+        <YandexMetrica/>
         <div className={layout}>
           <Header/>
             <main className={main}>

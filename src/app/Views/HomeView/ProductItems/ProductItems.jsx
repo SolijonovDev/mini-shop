@@ -3,7 +3,6 @@ import { data } from './product';
 import { Card } from './Card';
 
 export const ProductItems=()=>{
-    console.log(data)
     return (
         <div className={productItems}>
             <h2>Top chexollar</h2>

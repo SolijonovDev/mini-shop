@@ -4,7 +4,6 @@ import { FaStar } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 
 export const Card=({data})=>{
-    console.log('card component: ',data);
     return (
         <div className={card}>
             <img src={data.imgSrc} alt={data.title} />
