@@ -1,8 +1,8 @@
 import "./globals.css";
-import { Header } from "./Components/Header/Header";
-import { Footer } from "./Components/Footer/Footer";
+import { Header } from "../Components/Header/Header";
+import { Footer } from "../Components/Footer/Footer";
 import {layout, main } from '@/app/layout.module.scss';
-import { YandexMetrica } from "./Components/YandexMetrica.jsx/YandexMetrica";
+import { YandexMetrica } from "../Components/YandexMetrica.jsx/YandexMetrica";
 
 export const metadata = {
   title: "Shop time",

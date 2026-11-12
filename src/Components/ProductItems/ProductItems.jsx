@@ -1,11 +1,11 @@
-import {productItems,items} from '@/app/Views/HomeView/ProductItems/productItems.module.scss';
+import {productItems,items} from '@/Components/ProductItems/productItems.module.scss';
 import { data } from './product';
 import { Card } from './Card';
 
-export const ProductItems=()=>{
+export const ProductItems=({text="Top mahsulotlar"})=>{
     return (
         <div className={productItems}>
-            <h2>Top chexollar</h2>
+            <h2>{text}</h2>
 
            <div className={items}>
              {data.sort((a,b)=>b.prioritet-a.prioritet).map((d,index)=>{

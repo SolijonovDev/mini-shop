@@ -1,5 +1,5 @@
-import { SeparateNumberFormat } from '@/app/helpers/separate-number';
-import { shops,item, logo,item_left,item_info, rating,go_icon,shops_block } from '@/app/Views/HomeView/Shops/shops.module.scss';
+import { SeparateNumberFormat } from '@/helpers/separate-number';
+import { shops,item, logo,item_left,item_info, rating,go_icon,shops_block } from '@/Views/HomeView/Shops/shops.module.scss';
 import { FaStar } from "react-icons/fa";
 import { MdNavigateNext } from "react-icons/md";
 

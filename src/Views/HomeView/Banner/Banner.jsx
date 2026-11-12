@@ -1,4 +1,4 @@
-import {banner} from '@/app/Views/HomeView/Banner/banner.module.scss';
+import {banner} from '@/Views/HomeView/Banner/banner.module.scss';
 
 export const Banner=()=>{
     return (

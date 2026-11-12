@@ -1,5 +1,5 @@
-import { SeparateNumberFormat } from '@/app/helpers/separate-number';
-import {card, card_info,sold, star,price,comment} from '@/app/Views/HomeView/ProductItems/Card.module.scss';
+import { SeparateNumberFormat } from '@/helpers/separate-number';
+import {card, card_info,sold, star,price,comment} from '@/Components/ProductItems/Card.module.scss';
 import { FaStar } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 

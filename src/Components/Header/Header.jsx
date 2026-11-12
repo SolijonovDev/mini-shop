@@ -1,4 +1,4 @@
-import { header, header_block, left, right } from '@/app/Components/Header/header.module.scss';
+import { header, header_block, left, right } from '@/Components/Header/header.module.scss';
 import { Container } from '../Container/Container';
 import { CgProfile } from "react-icons/cg";
 import { MdFavoriteBorder } from "react-icons/md";

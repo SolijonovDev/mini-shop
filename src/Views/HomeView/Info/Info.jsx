@@ -1,4 +1,4 @@
-import {info,items,item,logo,line,item_text,item_subTitle} from '@/app/Views/HomeView/Info/info.module.scss';
+import {info,items,item,logo,line,item_text,item_subTitle} from '@/Views/HomeView/Info/info.module.scss';
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";

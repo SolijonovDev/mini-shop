@@ -1,4 +1,4 @@
-import {footer,footer_block } from '@/app/Components/Footer/footer.module.scss';
+import {footer,footer_block } from '@/Components/Footer/footer.module.scss';
 import { Container } from '../Container/Container';
 
 export const Footer=()=>{
