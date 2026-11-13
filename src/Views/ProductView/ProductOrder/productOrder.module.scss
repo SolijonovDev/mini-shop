@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    bottom: calc(6px + env(safe-area-inset-bottom, 0px));
+    bottom: env(safe-area-inset-bottom, 0px);
     background-color: #fff;
     border-top: 1px solid #666;
     @media (max-width:500px) {
