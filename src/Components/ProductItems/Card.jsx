@@ -9,7 +9,7 @@ export const Card=({data})=>{
             <img src={data.imgSrc} alt={data.title} />
             <div className={card_info}>
                 <h5>{data.title}</h5>
-                <p className={sold}>
+                <p className={sold}>    
                     <span>
                         <span className={star}>
                             <FaStar color='orange' size={14}/>

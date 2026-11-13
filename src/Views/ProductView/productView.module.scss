@@ -1,8 +1,21 @@
 .productView{
     display: grid;
-    grid-template-areas: 'slider params aside';
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;    
+    grid-template-areas: 'slider params' 'slider aside';
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px 80px;    
     margin-top: 15px;
     margin-bottom: 25px;
+    @media (max-width:920px) {
+        grid-gap: 12px 20px;   
+    }
+    @media (max-width:750px) {
+        grid-gap: 15px;   
+        grid-template-areas: 'slider params' 'aside aside';
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:500px) {
+        grid-gap: 12px;   
+        grid-template-areas: 'slider' 'params' 'aside';
+        grid-template-columns: 1fr;
+    }
 }
