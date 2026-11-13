@@ -1,11 +1,18 @@
+'use client'
 import { SeparateNumberFormat } from '@/helpers/separate-number';
 import {card, card_info,sold, star,price,comment} from '@/Components/ProductItems/Card.module.scss';
 import { FaStar } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
+import { useRouter } from 'next/navigation'
 
 export const Card=({data})=>{
+     const router = useRouter();
+
+     const handleNavigation = () => {
+    router.push('/products/'+String(data.id));
+  }
     return (
-        <div className={card}>
+        <div className={card} onClick={handleNavigation}>
             <img src={data.imgSrc} alt={data.title} />
             <div className={card_info}>
                 <h5>{data.title}</h5>

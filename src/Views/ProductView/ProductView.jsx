@@ -1,36 +1,26 @@
 import { Container } from "@/Components/Container/Container"
 import { Aside } from "./Aside/Aside"
 import { ProductSlider } from "./ProductSlider/ProductSlider"
-import { productView } from '@/Views/ProductView/productView.module.scss'
+import { productView,productViewBlock } from '@/Views/ProductView/productView.module.scss'
 import { Params } from "./Params/Params"
 import { ProductItems } from "@/Components/ProductItems/ProductItems"
 import { ProductOrder } from "./ProductOrder/ProductOrder"
+import { data } from "@/Components/ProductItems/product"
 
-const data= {
-        id:1000,
-        tovarId:2104262,
-        title:"Chexol iPhone 11, 12, 13, 14, 15, 16 Pro, Max, Plus uchun",
-        price:34990,
-        rating:4.8,
-        ratingQuantity:901,
-        orderQuantity:5500,
-        materialType:'silicon',
-        shopId:53297,
-        link:'https://uzum.uz/ru/product/chekhol-dlya-iphone-2104262?skuId=7528178',
-        imgSrc:"https://images.uzum.uz/d4a27huj76ohd6e18470/t_product_540_high.jpg",
-        prioritet:9,
-    };
-
-export const ProductView=()=>{
+export const ProductView=async ({params})=>{
+    const {id}=await params;
+    const currentData=data.find(obj=>obj.id==id);
     return (
-        <Container>
-            <div className={productView}>
-                <ProductSlider src={data.imgSrc} title='rasm'/>
-                <Params {...data}/>
-                <Aside price={data.price} go_uzum={data.link}/>
-                <ProductItems text="O'xshash mahsulotlar"/>
-                <ProductOrder price={data.price} go_uzum={data.link}/>
+        <div className={productView}>
+            <Container>
+            <div className={productViewBlock}>
+                <ProductSlider src={currentData.imgSrc} title='rasm'/>
+                <Params {...currentData}/>
+                <Aside price={currentData.price} go_uzum={currentData.link}/>
             </div>
+                <ProductItems text="O'xshash mahsulotlar"/>
+                <ProductOrder price={currentData.price} go_uzum={currentData.link}/>
         </Container>
+        </div>
     )
 }

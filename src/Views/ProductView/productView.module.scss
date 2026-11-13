@@ -1,4 +1,6 @@
 .productView{
+    margin-bottom: 80px;
+    .productViewBlock{
     display: grid;
     grid-template-areas: 'slider params' 'slider aside';
     grid-template-columns: 1fr 2fr;
@@ -19,4 +21,5 @@
         grid-template-columns: 1fr;
         margin-bottom: 75px;
     }
+}
 }
