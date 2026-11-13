@@ -4,6 +4,7 @@ import { ProductSlider } from "./ProductSlider/ProductSlider"
 import { productView } from '@/Views/ProductView/productView.module.scss'
 import { Params } from "./Params/Params"
 import { ProductItems } from "@/Components/ProductItems/ProductItems"
+import { ProductOrder } from "./ProductOrder/ProductOrder"
 
 const data= {
         id:1000,
@@ -27,8 +28,9 @@ export const ProductView=()=>{
                 <ProductSlider src={data.imgSrc} title='rasm'/>
                 <Params {...data}/>
                 <Aside price={data.price} go_uzum={data.link}/>
+                <ProductItems text="O'xshash mahsulotlar"/>
+                <ProductOrder price={data.price} go_uzum={data.link}/>
             </div>
-            <ProductItems text="O'xshash mahsulotlar"/>
         </Container>
     )
 }
