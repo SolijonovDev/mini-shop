@@ -29,9 +29,9 @@
     }
     .items{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 12px;
         }

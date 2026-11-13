@@ -18,7 +18,7 @@ export const Shops=()=>{
                         <span className={rating}><FaStar color='orange' size={14}/> 4.8</span> <span>{SeparateNumberFormat(43000)}+ zakaz</span>
                 </div>
            </div>
-              <a className={go_icon} href='https://uzum.uz/uz/shop/fyshop' target='_blank'><MdNavigateNext size={22}/></a>
+              <a className={go_icon} href='https://i2u.uz/fyshop' target='_blank' rel="noopener noreferrer"><MdNavigateNext size={22}/></a>
            </div>
               <div className={item}>
            <div className={item_left}>
@@ -30,7 +30,7 @@ export const Shops=()=>{
                     <span className={rating}><FaStar color='orange' size={14}/> 4.9</span> <span>{SeparateNumberFormat(20000)}+ zakaz</span>
             </div>
            </div>
-            <a href='https://uzum.uz/uz/shop/shop-time' target='_blank' className={go_icon}><MdNavigateNext size={22}/></a>
+            <a href='https://i2u.uz/shop-time' target='_blank' className={go_icon} rel="noopener noreferrer"><MdNavigateNext size={22}/></a>
            </div>
           </div>
         </div>

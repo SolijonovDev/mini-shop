@@ -1,0 +1,8 @@
+.productView{
+    display: grid;
+    grid-template-areas: 'slider params aside';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;    
+    margin-top: 15px;
+    margin-bottom: 25px;
+}

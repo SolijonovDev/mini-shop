@@ -22,7 +22,7 @@ export const Card=({data})=>{
                     <span>{data.orderQuantity} + sotuv</span> 
                 </p>
                 <p className={price}>{SeparateNumberFormat(data.price)} so'm</p>
-                <a href={data.link} target='_blank'>
+                <a href={data.link} target='_blank' rel="noopener noreferrer">
                    <span> Uzum'da xarid</span>
                     <img src="/uzum-logo.webp" alt="uzum logo" />
                    </a>
